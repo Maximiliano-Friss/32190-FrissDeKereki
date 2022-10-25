@@ -24,7 +24,7 @@ class Usuario {
 
     getBookNames() {
         const arrayBookNames = this.libros.map(element => element.nombre);
-        return arrayBookNames;
+        console.log(arrayBookNames)
     }
 }
 
@@ -42,5 +42,5 @@ console.log(`Número total de mascotas: ${Creator.countMascotas()}`);
 Creator.addBook('El Fin de la Eternidad','Isaac Asimov');
 Creator.addBook('Dune', 'Frank Herbert');
 //Leer nombres de libros
-console.log(`Nombres de libros: ${Creator.getBookNames()}`);
+Creator.getBookNames();
 
